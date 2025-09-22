@@ -3,6 +3,8 @@
 namespace WeLabs\XWoodokan;
 
 use WeLabs\XWoodokan\VendorRegistrationForm;
+use WeLabs\XWoodokan\ProductMaterialField;
+use WeLabs\XWoodokan\WarningSuppressor;
 /**
  * XWoodokan class
  *
@@ -178,6 +180,7 @@ final class XWoodokan {
     public function init_classes() {
         $this->container['scripts'] = new Assets();
         $this->container['vendor_registration_form'] = new VendorRegistrationForm();
+        $this->container['product_material_field'] = new ProductMaterialField();
     }
 
     /**
